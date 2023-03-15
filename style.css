@@ -1,0 +1,160 @@
+:root {
+  /* Festlegen von Variablen für alle Farben */
+  --blau: #11346f;
+}
+
+* {
+  font-family: kanit, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+nav {
+  background-color: #11346f;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  height: 15vh;
+  width: 100%;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+  position: sticky;
+  top: 0px;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  /* background-image: linear-gradient(#11346f); */
+  background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.234)
+    ),
+    url(/Material/Headerbild.jpeg);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+  top: 0px;
+}
+
+header {
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background-color: #11346f;
+  position: sticky;
+  top: 0px;
+}
+
+.logo {
+  height: 70px;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  transition: 100ms;
+}
+
+nav ul li a:hover
+/* , nav ul li a:active  */ {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+button {
+  background-color: white;
+  border-color: white;
+  border-width: 2px;
+  padding: 12px 30px;
+  transition: 100ms;
+}
+
+button:hover {
+  background-color: #11346f;
+  border-color: white;
+  color: white;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 5vw;
+  font-weight: 500;
+  color: var(--blau);
+  margin-right: 20%;
+  padding-top: 20%;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+button {
+  font-size: 1rem;
+}
+
+label {
+  font-size: 0.875rem;
+}
+
+caption {
+  font-size: 0.75rem;
+}
+
+.maxwidth {
+  padding-left: 10%;
+  top: 0px;
+  max-width: 65%;
+}
+
+#herobutton {
+display: flex;
+}
+.button1 {
+  margin: 10px;
+  background-color: white;
+  border: solid 2px #11346f;
+}
+
+.button2 {
+  background-color: #11346f;
+  color: white;
+  border: solid 2px #11346f;
+  margin: 10px;
+}
