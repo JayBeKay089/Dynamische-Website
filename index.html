@@ -11,7 +11,6 @@
   </head>
   <body>
     <!-- ! Navigation -->
-
     <header class="header">
       <nav class="main-navigation">
         <div class="container">
@@ -26,6 +25,8 @@
           </div>
         </div>
       </nav>
+
+      <!-- ! Headerelement -->
       <div class="headerimage">
         <div class="container">
           <div class="headertitle maxwidth">
@@ -36,50 +37,61 @@
       </div>
     </header>
 
-    <!-- ! Header -->
-
     <!-- ! Formular -->
-    <form id="formular" action="">
-      <h4>Geschlecht</h4>
-      <label>
-        <input type="radio" name="gender" id="man" value="man" />
-        <span>Männlich</span>
-      </label>
-      <label>
-        <input type="radio" name="gender" id="woman" value="woman" />
-        <span>Weiblich</span>
-      </label>
-      <label>
-        <input type="radio" name="gender" id="divers" value="divers" />
-        <span>Divers</span>
-      </label>
-      <br />
-      <label for="Vorname">Vorname</label> <br />
-      <input name="vorname" type="text" placeholder="Max" />
-      <br />
-      <label for="Nachname">Nachname</label> <br />
-      <input name="nachname" type="text" placeholder="Mustermann" />
-      <br />
-      <label for="Mail">E-Mailadresse</label> <br />
-      <input name="mail" type="email" placeholder="max@mustermann.de" /> <br />
-      <input type="checkbox" name="box" />
-      <label for="box">Ja, ich will den Spam-Newsletter abonnieren.</label>
-      <br />
-      <input type="submit" value="Formular absenden" />
-    </form>
+    <div class="container">
+      <div class="maxwidth">
+        <form id="formular" action="">
+          <h4>Geschlecht</h4>
+          <label>
+            <input type="radio" name="gender" id="man" value="man" required />
+            <span>Männlich</span>
+          </label>
+          <label>
+            <input type="radio" name="gender" id="woman" value="woman" required />
+            <span>Weiblich</span>
+          </label>
+          <label>
+            <input type="radio" name="gender" id="divers" value="divers" required />
+            <span>Divers</span>
+          </label>
+          <br />
+          <label for="Vorname">Vorname</label> <br />
+          <input name="vorname" type="text" placeholder="Max" required />
+          <br />
+          <label for="Nachname">Nachname</label> <br />
+          <input name="nachname" type="text" placeholder="Mustermann" required />
+          <br />
+          <label for="Mail">E-Mailadresse</label> <br />
+          <input name="mail" type="email" placeholder="max@mustermann.de" required /> <br />
+          <h4>Newsletter</h4>
+          <input type="checkbox" name="box" />
+          <label for box>Ja, ich will den Spam-Newsletter abonnieren.</label>
+          <br />
+          <input type="submit" value="Formular absenden" />
+        </form>
+      </div>
+    </div>
 
     <!--! Footerelement -->
-    <footer>
-      <a href="#">Wir über uns</a>
-      <a href="#">Aktionen</a>
-      <a href="#">Terminvereinbarung</a>
-      <a href="#">Infos</a>
-      <a href="#">Impressum</a>
-      <a href="#">AGB</a>
-      <a href="#">Datenschutz</a>
-      <hr />
-      <h4>Jordan Keil, m3a</h4>
-    </footer>
+    <div class="bluebackground">
+      <div class="container">
+        <div class="maxwidth">
+          <footer>
+            <div class="bottomnavigation">
+              <a href="#">Wir über uns</a>
+              <a href="#">Aktionen</a>
+              <a href="#">Terminvereinbarung</a>
+              <a href="#">Infos</a>
+              <a href="#">Impressum</a>
+              <a href="#">AGB</a>
+              <a href="#">Datenschutz</a>
+            </div>
+            <hr />
+            <h5>Jordan Keil, m3a</h5>
+          </footer>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 
