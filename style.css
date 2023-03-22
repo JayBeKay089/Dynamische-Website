@@ -15,7 +15,7 @@
 body {
   padding: 0;
   margin: 0;
-  min-width: 315px;
+  min-width: 250px;
 }
 
 a {
@@ -52,6 +52,7 @@ h1 {
   line-height: 1.1em;
   text-shadow: 4px 4px 30px var(--weiß);
   font-weight: 600;
+  margin-bottom: 1em;
 }
 
 header section {
@@ -78,6 +79,12 @@ p {
   position: sticky;
   top: 0;
 }
+/* @media (min-width: 700px) {
+  .main-navigation {
+    position: sticky;
+    top: 0;
+  }
+} */
 
 .main-navigation .maxwidth {
   align-items: center;
@@ -155,12 +162,17 @@ p {
   /* margin: auto; */
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .headertitle {
   padding: 0em 2em 3em 2em;
 }
 @media (min-width: 700px) {
   .headertitle {
-    max-width: 50%;
+    max-width: 40%;
     align-items: left;
   }
 }
