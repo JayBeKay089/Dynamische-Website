@@ -1,154 +1,128 @@
 :root {
   /* Festlegen von Variablen für alle Farben */
   --blau: #11346f;
+  --weiß: #ffffff;
+  --schwarz: #181c25;
+  /* responsive Schriftgröße */
+  font-size: min(max(1rem, calc(1rem + (1.5 - 1) * ((100vw - 48rem) / (120 - 48)))), 1.5rem);
+  min-height: 0vw;
+}
+
+:root {
 }
 
 * {
   font-family: kanit, sans-serif;
+}
+
+body {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  min-width: 315px;
 }
 
-nav {
-  background-color: #11346f;
-  height: 100%;
-  width: 100%;
-}
-
-.navbar {
-  height: 15vh;
-  width: 100%;
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: top;
-  position: sticky;
-  top: 0px;
-}
-
-.hero {
-  height: 100vh;
-  width: 100%;
-  /* background-image: linear-gradient(#11346f); */
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.234)), url(./Material/Headerbild_Desktop.jpg);
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: top;
-  top: 0px;
-}
-
-header {
-  align-items: center;
-  justify-content: center;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 10%;
-  background-color: #11346f;
-  position: sticky;
-  top: 0px;
-}
-
-.logo {
-  height: 70px;
-}
-
-nav ul li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 10px 20px;
-}
-
-nav ul li a {
-  color: white;
-  display: inline-block;
+a {
+  color: var(--weiß);
   text-decoration: none;
-  transition: 100ms;
+  font-size: 0.8rem;
 }
 
-nav ul li a:hover
-/* , nav ul li a:active  */ {
+#Link3 {
   text-decoration: underline;
-  transform: scale(1.1);
-}
-
-button {
-  background-color: white;
-  border-color: white;
-  border-width: 2px;
-  padding: 12px 30px;
-  transition: 100ms;
-}
-
-button:hover {
-  background-color: #11346f;
-  border-color: white;
-  color: white;
-  transform: scale(1.03);
-  cursor: pointer;
 }
 
 h1 {
-  font-size: 5vw;
-  font-weight: 500;
   color: var(--blau);
-  margin-right: 20%;
-  padding-top: 20%;
+  font-size: 3rem;
+  line-height: 1.2em;
+  text-shadow: 4px 4px 30px var(--weiß);
+  font-weight: 600;
 }
 
-h2 {
-  font-size: 2rem;
+header section {
+  margin: 15vh auto;
 }
 
-h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
+header section a {
+  background-color: var(--blau);
+  padding: 1em 2em;
 }
 
 p {
-  font-size: 1rem;
+  color: var(schwarz);
 }
 
-button {
-  font-size: 1rem;
+nav {
+  background-color: var(--blau);
+  position: sticky;
+  top: 0;
 }
 
-label {
-  font-size: 0.875rem;
+nav section {
+  margin: 400px;
 }
 
-caption {
-  font-size: 0.75rem;
+nav section a {
+  display: flex;
+  align-items: center;
+  transition: 30ms;
+}
+
+a:hover {
+  transform: scale(1.01);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.companylogo {
+  height: 3rem;
+}
+
+.headerimage {
+  height: 100vh;
+  /* background-image: url(./Material/Headerbild.jpeg); */
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.234)), url(./Material/Headerbild_Desktop.jpg);
+  background-size: cover;
+  background-position-x: center;
 }
 
 .maxwidth {
-  padding-left: 10%;
-  top: 0px;
-  max-width: 65%;
+  max-width: 1280px;
+  padding: 0.7rem 2em;
+  margin: auto;
 }
 
-#herobutton {
-  display: flex;
-}
-.button1 {
-  margin: 10px;
-  background-color: white;
-  border: solid 2px #11346f;
+.gridcontainer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
-.button2 {
-  background-color: #11346f;
-  color: white;
-  border: solid 2px #11346f;
-  margin: 10px;
+.grid-item {
+}
+
+@media (min-width: 700px) {
+  .twocolumns {
+    grid-template-columns: 60% 40%;
+  }
+}
+
+@media (min-width: 700px) {
+  .twodifferentcolumns {
+    grid-template-columns: 15% 85%;
+    grid-column-gap: 20px;
+  }
+}
+
+@media (min-width: 700px) {
+  .fourcolumns {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.twocolumns {
+  align-items: center; /* Vertikale Ausrichtung der Grid-Items */
 }

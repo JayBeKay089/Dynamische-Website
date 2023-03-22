@@ -6,37 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Termin buchen | Optic Track</title>
     <link rel="stylesheet" href="https://use.typekit.net/ecu8cjc.css" />
-    <link rel="icon" type="image/x-icon" href="./Material/Favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="./Material/Favicon.png" />
     <link rel="stylesheet" href="./style.css " />
   </head>
   <body>
-    <!-- ! Navigation -->
+    <!-- Navigationsleiste -->
+    <!-- <nav>
+      <img src=."/Material/Logo.svg" alt="Optic Track Logo" />
+      <a href=."/Wir über uns.html">Wir über uns</a>
+      <a href="Aktionen">Aktionen</a>
+      <a href="Terminvereinbarung.html">Terminvereinbarung</a>
+      <a href="Infos.html">Infos</a>
+    </nav> -->
 
-    <nav>
-      <section class="gridcontainer twodifferentcolumns maxwidth">
-        <a href="#"><img src="./Material/Logo.svg" alt="Logo" class="companylogo grid-item" /></a>
-        <ul class="gridcontainer grid-item fourcolumns">
+    <div class="navbar">
+      <nav>
+        <!-- <h2 class="logo">John Doe</h2> -->
+        <a href="#"><img class="logo" src="./Material/Logo.svg" alt="Logo" /></a>
+        <ul>
           <li><a href="#" id="Link1">Wir über uns</a></li>
           <li><a href="#" id="Link2">Aktionen</a></li>
-          <li><a href="#" id="Link3">Terminvereinbarung</a></li>
+          <li>
+            <a href="#" id="Link3">Terminvereinbarung</a>
+          </li>
           <li><a href="#" id="Link4">Infos</a></li>
         </ul>
-      </section>
-    </nav>
-
-    <!-- ! Header -->
-
-    <div class="headerimage">
-      <header class="gridcontainer twocolumns maxwidth">
-        <section class="grid-item">
-          <h1>Vereinbaren Sie einen Termin mit uns</h1>
-          <a href="#formular">Jetzt Termin buchen</a>
-        </section>
-      </header>
+        <button type="button">Kontaktformular</button>
+      </nav>
     </div>
 
-    <!-- ! Formular -->
-    <form id="formular" action="">
+    <div class="hero">
+      <div class="maxwidth">
+        <header>
+          <h1>Vereinbaren Sie einen Termin mit uns</h1>
+          <div id="herobutton">
+            <button class="button1" type="button">Wir über uns</button>
+            <button class="button2" type="button">termin buchen</button>
+          </div>
+        </header>
+      </div>
+    </div>
+    !
+    <!-- Headerelement -->
+    <!-- <header>
+      <div class="container1000">
+        <h1>Vereinbaren Sie einen Termin mit uns</h1>
+        <a href=."/Wir über uns.html">Wir über uns</a>
+        <a href="#Formular">Termin buchen</a>
+        <img
+          src=."/Material/Headerbild_Desktop.jpg"
+          alt="Älterer Herr mit Brille"
+        />
+      </div>
+    </header> -->
+
+    <!-- Kontaktformular -->
+    <form id="Formular" action="">
       <h4>Geschlecht</h4>
       <label>
         <input type="radio" name="gender" id="man" value="man" />
@@ -65,7 +90,7 @@
       <input type="submit" value="Formular absenden" />
     </form>
 
-    <!--! Footerelement -->
+    <!-- Footerelement -->
     <footer>
       <a href="#">Wir über uns</a>
       <a href="#">Aktionen</a>
@@ -80,13 +105,15 @@
   </body>
 </html>
 
+<!-- Better commenter -->
+<!-- ! Shortcuts: cmd b, cmd p, cmd d, :23, alt + klick für multiselection, alt hoch /runter, lorem 55 -->
+<!-- ?what -->
+<!-- TODO -->
+<!-- !Test löschen -->
+
 <!-- Lernings
 
   Grundlegende Logiken / Methoden (Sinnvolle Einheiten, wie mach ich max width, media querys, flexblox, mittig zentireren von elementen in div, grids)
   Bootstrap hernehmen => erst bootstrap styles verlinken, dann eigenes css
 
 -->
-
-<!-- ? Wie mache ich mit grid Unterschiedlich Große Spalten in einer Zeile => ohne Repeate & mit Prozente -->
-<!-- ? Header 100vh berücksichtigt nicht die fixed Navbar, diese müsste mit negativen padding abgezogen werden aber hat keinen Festen wert, da sie sich dynamsich den Inhalten anpasst -->
-<!-- ? Gleichmäßige Abstände mit Grid -->
