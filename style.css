@@ -52,41 +52,89 @@ p {
   color: var(schwarz);
 }
 
-nav {
-  background-color: var(--blau);
-  position: sticky;
-  top: 0;
-}
-
-nav section {
-  margin: 400px;
-}
-
-nav section a {
-  display: flex;
-  align-items: center;
-  transition: 30ms;
+a {
+  transition: 150ms;
 }
 
 a:hover {
   transform: scale(1.01);
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
+.header {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: max-content auto;
 }
 
-.companylogo {
-  height: 3rem;
+.main-navigation {
+  background-color: var(--blau);
+  position: sticky;
+  top: 0;
+}
+
+.main-navigation .maxwidth {
+  align-items: center;
+  display: grid;
+}
+@media (min-width: 700px) {
+  .main-navigation .maxwidth {
+    grid-template-columns: max-content auto;
+  }
+}
+
+/* body > div > nav:first-of-type > a */
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 700px) {
+  .logo {
+    margin: unset;
+  }
+}
+
+.logo img {
+  max-width: 160px;
+}
+
+.main-navigation ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+@media (min-width: 700px) {
+  .main-navigation ul {
+    text-align: right;
+  }
+}
+
+.main-navigation li {
+  display: block;
+  margin: 0.05em 0;
+}
+@media (min-width: 700px) {
+  .main-navigation li {
+    display: inline-block;
+    margin: 0 0.5em;
+  }
+}
+
+.main-navigation li a {
+  background-color: green;
+  display: block;
+  padding: 0.25em;
+  line-height: 2em;
 }
 
 .headerimage {
-  height: 100vh;
   /* background-image: url(./Material/Headerbild.jpeg); */
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.234)), url(./Material/Headerbild_Desktop.jpg);
   background-size: cover;
   background-position-x: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
 .maxwidth {
@@ -95,13 +143,9 @@ nav ul {
   margin: auto;
 }
 
-.gridcontainer {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
-.grid-item {
+.headertitle {
+  background-color: green;
+  max-width: 50%;
 }
 
 @media (min-width: 700px) {
