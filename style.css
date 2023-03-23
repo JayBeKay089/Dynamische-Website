@@ -175,15 +175,15 @@ p {
 
 .main-navigation {
   background-color: var(--blau);
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
 }
-/* @media (min-width: 700px) {
+@media (min-width: 700px) {
   .main-navigation {
     position: sticky;
     top: 0;
   }
-} */
+}
 
 .main-navigation .maxwidth {
   align-items: center;
