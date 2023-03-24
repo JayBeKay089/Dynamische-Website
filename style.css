@@ -11,6 +11,7 @@
 
 * {
   font-family: kanit, sans-serif;
+  box-sizing: border-box;
 }
 
 html {
@@ -33,6 +34,7 @@ a {
 form {
   margin: 1em auto;
   font-size: 0.8rem;
+  box-sizing: border-box;
 }
 @media (min-width: 700px) {
   form {
@@ -80,6 +82,7 @@ input[type="email"] {
   height: 3em;
   padding-left: 1.1em;
   border: none;
+  /* box-sizing: border-box; */
 }
 
 input[type="radio"] {
